@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.body-content {
+    padding-bottom: 140px; /* footer의 높이 */
+}
+
+#footer {
+    width: 100%;
+    height: 100px; /* footer의 높이 */
+    position: absolute;  
+    bottom: 0;
+    left: 0;
+    background:grey; color:white; text-align:center; line-height:100px;
+    
+}
+
+.bookList-btn {
+	float:right; margin-top:15px;
+}
+.bookList-btn button{
+	font-size:8px;
+}
+
+.search{
+	width:500px;
+}
+#book-search{
+	display:inline-block;
+}
+
+/*댓글*/
+#reply--info{
+	font-size:1em; font-weight:bold; border-bottom:1px solid #e0e0e0; padding:10px
+}
+.reply--box{
+	border-bottom: 1px solid #e0e0e0; padding:10px
+}
+.reply{
+	border-bottom: 1px solid #e0e0e0; padding:10px
+}
+.reply-content{
+	width:70%; float:left; font-size:0.9em; padding-left:8px;
+}
+.reply-etc{
+	float:right; right:0;
+}
+.reply-userId{
+	font-size:0.7em; float:left; padding-right:10px;position:relative; cursor:pointer;
+}
+.reply-userId:hover{
+	color:#1976d2
+}
+.addChat{
+	font-size:1em; padding:7px 15px; position:absolute;background:#eeeeee; z-index:99999; 
+	cursor:pointer; display:none
+}
+.reply-etc button{
+	font-size:0.7em; border:none; border-radius:4px; float:left; background-color:light-grey; 
+}
+a{
+	text-decoration:none; color:inherit;
+}
+.pagination-sm li{
+	padding:11px; font-size:15px;
+}
+.pagination-sm li.active{
+	color:#ef9a9a;
+}
+
+/*board*/
+.board_list{
+	border-top:2px solid #ccc;
+}
+.board_list th{
+	text-align:center; font-weight:bold;
+}
+.board_list tr{
+	border-bottom:1px solid #ccc;
+}
+.board_list th, .board_list td{
+	padding:12px; font-size:12px;
+}
+.board_list td{
+	text-align:center;
+}
+.board_list .tit{	
+	text-align:left;
+}
+.board_list .tit:hover{	
+	text-decoration: underline;
+}
+.board_list_wrap .bwrite{
+	float:right; font-size:12px; padding:10px;
+}
+.board_list_wrap .bwrite:hover{
+	text-decoration: underline;
+}
+
+/*홈*/
+.rReply{
+	float:left;width:100%;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;
+	padding:4px;  font-size:14px;
+}
+.head-list{
+	font-size:0.9em;list-style:none;
+}
+.head-list li{
+	display: inline; padding-left:20px;
+}
+.crelative{
+	position:relative;
+}
+#newChat{
+	background-color:red; position:absolute; top:0; z-index:9999;font-size:0.5em; 
+	color:white; height: 15px;width: 15px; line-height:5px; padding: 5px;
+	text-align: center; border-radius: 50%; 
+}

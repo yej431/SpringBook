@@ -1,0 +1,47 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookdata?serverTimezone=Asia/Seoul
+    username: user01
+    password: 1234
+ 
+ 
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
+        #PhysicalNamingStrategyStandardImpl : 테이블을 만들때 변수명 그대로 데이터베이스에 저장
+        #SpringPhysicalNamingStrategyStandardImpl : 카멜표기법을 스네이크표기법으로 고쳐서 데이터베이스에 저장
+      use-new-id-generator-mappings: false 
+    show-sql: true 
+#    properties:
+#      hibernate.format_sql: true #sql을 정렬하여 보여준다.
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+     
+cos: #스페이스 없어야 함.
+  key: cos1234
