@@ -29,9 +29,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity 
 public class Board {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private int id;
@@ -49,7 +47,7 @@ public class Board {
 	private User user;
 	
 	@OneToMany(mappedBy="board", fetch = FetchType.EAGER, cascade=CascadeType.REMOVE) 
-	@JsonIgnoreProperties({"board"}) //다이랙트 접근은 가능, board로 접근은 불가능
+	@JsonIgnoreProperties({"board"})
 	@OrderBy("id desc")
 	private List<BoardReply> replys; 
 	

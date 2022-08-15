@@ -21,9 +21,8 @@ import lombok.NoArgsConstructor;
 @Entity 
 @Table(name="bookreply")
 public class BookReply {
-
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY) //auto_increment
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	@ManyToOne

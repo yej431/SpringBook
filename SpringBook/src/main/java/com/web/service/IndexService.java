@@ -20,7 +20,6 @@ public class IndexService {
 	public List<BookReply> rReply() throws Exception {
 		return bookReplyRepository.rReply();
 	}
-
 	
 	 public List<Recommend> bookRanking() throws Exception { return
 	 recommendRepository.bookRanking(); }

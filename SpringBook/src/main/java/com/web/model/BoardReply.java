@@ -20,12 +20,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity 
 @Table(name="boardreply")
 public class BoardReply {
-
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY) //auto_increment
+	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private int id;
 	
 	@Column

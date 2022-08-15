@@ -18,8 +18,7 @@ import com.web.repository.WishRepository;
 import com.web.service.NaverBookService;
 
 @Controller 
-public class BookController {	
-	
+public class BookController {		
 	@Autowired
 	NaverBookService naverBookService;	
 	

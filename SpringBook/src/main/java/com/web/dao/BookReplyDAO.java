@@ -6,7 +6,6 @@ import com.web.config.paging.Criteria;
 import com.web.model.BookReply;
 
 public interface BookReplyDAO {
-
 	List<BookReply> list(String isbn) throws Exception;
     void create(BookReply re) throws Exception;
     void delete(Integer id) throws Exception;

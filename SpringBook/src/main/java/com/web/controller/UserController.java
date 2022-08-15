@@ -126,7 +126,7 @@ public class UserController {
 		System.out.println("카카오 유저네임 : "+kakaoProfile.getKakao_account().getEmail()
 				+"_"+kakaoProfile.getId());
 		System.out.println("이메일 : "+kakaoProfile.getKakao_account().getEmail());
-		//UUID garbagePw = UUID.randomUUID(); //중복되지 않는 어떤 특정 값 만들어내는 알고리즘
+		//UUID garbagePw = UUID.randomUUID();
 		System.out.println("패스워드 : "+cosKey);
 		
 		User kakaoUser = User.builder()

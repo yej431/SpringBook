@@ -16,9 +16,7 @@ import com.web.repository.BoardRepository;
 import com.web.service.BoardService;
 
 @Controller
-//@Controller : viewResolver 작동 -> 해당 페이지로 모델정보를 들고 간다.
-public class BoardController {
-	
+public class BoardController {	
 	@Autowired
 	BoardService boardService;
 	@Autowired

@@ -31,8 +31,8 @@ public class NaverBookService {
     @Autowired
     BookReplyRepository replyListRepository;
     
-	private static String clientID = "DExmSylU57B0u2Aov7qQ";
-    private static String clientSecret = "rzVycRVAaz";
+	private static String clientID = "";
+    private static String clientSecret = "";
     
     //API를 통해 검색된 목록 조회
 	public String search(String keyword) {

@@ -7,12 +7,7 @@
 <div class="body-content">
 
 <div>
-<!--  <c:if test="${empty principal.user.oauth}">-->
-		작성자 : <span><i>${board.user.userId} </i></span>
-<!--	</c:if>
-	<c:if test="${not empty principal.user.oauth}">
-		작성자 : <span><i>${board.user.email} </i></span>
-	</c:if>-->
+작성자 : <span><i>${board.user.userId} </i></span>
 </div>
 <br/>
 
