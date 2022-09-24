@@ -44,4 +44,4 @@ spring:
       force: true
      
 cos: #스페이스 없어야 함.
-  key: cos1234
+  key: 
