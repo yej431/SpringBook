@@ -15,7 +15,7 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:/3.34.233.88:3306/portfoliodb?serverTimezone=Asia/Seoul
+    url: jdbc:mysql:/3.34.233.88:3306/bookdata?serverTimezone=Asia/Seoul
     username: root
     password: 1234
  
