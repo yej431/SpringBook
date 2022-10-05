@@ -15,9 +15,9 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bookdata?serverTimezone=Asia/Seoul
-    username: 
-    password: 
+    url: jdbc:mysql:/3.34.233.88:3306/bookdata?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
  
  
   jpa:
@@ -44,4 +44,4 @@ spring:
       force: true
      
 cos: #스페이스 없어야 함.
-  key: 
+  key: cos1234
