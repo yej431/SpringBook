@@ -7,8 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.web.model.User;
 
-//자동으로 bean에 등록됨.
-//@Repository 생략 가능.
 public interface UserRepository extends JpaRepository<User, Integer> { 
 	Optional<User> findByUserId(String userId);
 	
