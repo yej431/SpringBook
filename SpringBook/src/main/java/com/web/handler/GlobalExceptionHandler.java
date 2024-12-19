@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.web.dao.ResponseDto;
 
-@ControllerAdvice //모든 패키지에서 Exception발생 시 여기를 거치게 한다.
+@ControllerAdvice 
 @RestController
 public class GlobalExceptionHandler {
 
