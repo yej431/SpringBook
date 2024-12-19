@@ -17,7 +17,7 @@ import com.web.repository.BoardRepository;
 
 import lombok.RequiredArgsConstructor;
 
-@Service //스프링이 컴포넌트 스캔을 통해 Bean에 등록을 해준다(IoC 해준다).
+@Service 
 @RequiredArgsConstructor
 public class BoardService {
 	
