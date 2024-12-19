@@ -34,8 +34,6 @@ public class UserApiController {
 	@PutMapping("/user")
 	public ResponseDto<Integer> update(@RequestBody User user){
 		userService.회원수정(user);
-		//여기서는 트랜잭션이 종료되기 때문에 DB의 값이 변경이 됨. 
-		//하지만 세션값을 변경되지 않은 상태이기때문에 직접 세션값을 변경해줄것이다.
 		
 		//세션 등록
 		Authentication authentication 
